@@ -63,5 +63,5 @@ end=clock();
 double t= double (end-start)/double(CLOCKS_PER_SEC);
 cout<<"Time taken "<<t;
 return 0;
-	return 0;
+	
 }

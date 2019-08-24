@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include<iostream>
+#include<time.h>
 
 using namespace std;
 
@@ -24,6 +25,10 @@ void bubbleSort(int arr[], int n)
 
 int main(int argc, char **argv)
 {
+	clock_t start,end;
+
+	start=clock();
+	{
 	int arr[20],n,i,key;
 	printf("Enter the size");
 	cin>>n;
@@ -53,5 +58,10 @@ int main(int argc, char **argv)
 		cout<<"-"<<arr[i];
 	}
 	}
+		}
+end=clock();
+double t= double (end-start)/double(CLOCKS_PER_SEC);
+cout<<"Time taken "<<t;
+return 0;
 	return 0;
 }
